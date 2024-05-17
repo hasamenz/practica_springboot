@@ -34,9 +34,13 @@ public class PersonaServiceImpl implements PersonaService {
         Persona personaBBDD = personaREpository.findById(id).orElse(null);
         return null;
     }
-
     @Override
     public void eliminarPersona(Long id) {
 
+    }
+
+    @Override
+    public Long contarPersonas() {
+        return personaREpository.count();
     }
 }

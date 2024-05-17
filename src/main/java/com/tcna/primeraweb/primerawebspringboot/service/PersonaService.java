@@ -10,4 +10,5 @@ public interface PersonaService {
     Persona crearPersona(Persona persona);
     Persona actualizarPersona(Long id,Persona persona);
     void eliminarPersona(Long id);
+    Long contarPersonas();
 }
