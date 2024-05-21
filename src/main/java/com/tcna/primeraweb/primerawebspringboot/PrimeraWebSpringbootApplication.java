@@ -11,16 +11,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.List;
 
 @SpringBootApplication
-public class PrimeraWebSpringbootApplication implements CommandLineRunner {
+public class PrimeraWebSpringbootApplication {
 
 	@Autowired
 	private PersonaService personaService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(PrimeraWebSpringbootApplication.class, args);
-
 	}
 
+	/*
 	@Override
 	public void run(String... args) throws Exception {
 		personaService.crearPersona(new Persona(7L,"Lucho",27));
@@ -36,4 +36,6 @@ public class PrimeraWebSpringbootApplication implements CommandLineRunner {
 		List<Persona> personas = personaService.obtenerTodas();
 		personas.forEach(p -> System.out.println("Nombre de la persona : " +p.getNombre()));
 	}
+
+	 */
 }
